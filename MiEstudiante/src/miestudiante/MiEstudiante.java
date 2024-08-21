@@ -21,9 +21,12 @@ public class MiEstudiante {
             new Estudiante("Carlos", "Ramirez", "civil", 23),
             new Estudiante("Jhon", "Leon", "civil", 20)
         };
+        
+        System.out.println(estudiante[1].getEdad());
+        System.out.println("------foreach-----");
 
-        for (Estudiante estudiantes : estudiante) {
-            System.out.println(estudiantes);
+        for (Estudiante vareEstudiantes : estudiante) {
+            System.out.println(vareEstudiantes);
         }
     }
 
