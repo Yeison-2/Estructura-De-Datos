@@ -1,3 +1,36 @@
+# Archivos de logs
+*.log
+
+# Archivos de dependencias
+/.mvn/
+/.mvn/wrapper/maven-wrapper.jar
+/.gradle/
+/.gradle/
+/.gradle/*
+
+# Archivos de empaquetado
+*.jar
+*.war
+*.ear
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración de NetBeans
+/nbproject/private/
+/nbproject/build-impl.xml
+/nbproject/genfiles.properties
+/nbproject/project.properties
+/nbproject/project.xml
+
+# Archivos de configuración de IntelliJ IDEA
+/.idea/
+/*.iml
+
+# Archivos de configuración de Visual Studio Code
+/.vscode/
+
 /BuscaMinas/nbproject/private/
 /BuscaMinas/build/
 /CalificacionesEstudiantes/nbproject/private/
@@ -8,3 +41,5 @@
 /MiEstudiante/nbproject/private/
 /MiEstudiante/build/
 /miListaSimple/target/
+
+
