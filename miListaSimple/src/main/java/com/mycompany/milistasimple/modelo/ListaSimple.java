@@ -75,7 +75,30 @@ public class ListaSimple {
                 temp.setSiguiente(null);
                 
             }
+            tamano--;
+        }else {
+            System.out.println("Lista vacia");
         }
+    }
+    
+    public Nodo modificarUltimoNodo(int dato){
+        if (cabeza != null) {
+            if (tamano == 1) {
+                cabeza.setDato(dato);
+                return cabeza;
+            } else {
+                Nodo temp =cabeza;
+                for(int i=0; i<tamano ;i++){
+                    temp = temp.getSiguiente();
+                }
+                temp.setDato(dato);
+                return temp;
+            }
+        }else{
+            System.out.println("lista sin nada");
+            return null;
+        }
+        
     }
     
     public Nodo getCabeza(){
