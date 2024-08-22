@@ -19,9 +19,11 @@ package com.mycompany.milistasimple.modelo;
  */
 public class ListaSimple {
     private Nodo cabeza;
+    private int tamano;
    
     public ListaSimple(){
         this.cabeza = null;
+        this.tamano = 0;
     }
     
     public void agregar(int dato){
@@ -32,6 +34,7 @@ public class ListaSimple {
             Nodo temp = cabeza;
             while(temp.getSiguiente() != null){
                 temp = temp.getSiguiente();
+                tamano++;
             }
             
             temp.setSiguiente(nuevoNodo);
@@ -45,6 +48,33 @@ public class ListaSimple {
         }else {
             System.out.println("Lista vacia");
             
+        }
+    }
+    
+    public int buscar(int dato){
+        Nodo actual = cabeza;
+        while(actual.getSiguiente() != null ){
+            if (actual.getDato() == dato) {
+                return actual.getDato();
+            }
+            actual = actual.getSiguiente();
+        }
+        return -1;
+    }
+    
+    public void eliminarUltimo(){
+        if(cabeza != null){
+            if (tamano ==1) {
+                cabeza = null;
+   
+            }else{
+                Nodo temp = cabeza;
+                for (int i = 0; i < tamano -1; i++) {
+                    temp = temp.getSiguiente();
+                }
+                temp.setSiguiente(null);
+                
+            }
         }
     }
     

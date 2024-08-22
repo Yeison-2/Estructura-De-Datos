@@ -29,6 +29,10 @@ public class MiListaSimple {
         view.mostrarMensaje("Lista despues de eliminar un elemento");
         ctrl.eliminarElemento();
         ctrl.mostraLista();
+        
+        //buscar int dato = 3
+        System.out.println("Buscar elemento 3");
+        view.mostrarMensaje(String.valueOf(model.buscar(3)));
 
     }
 }

@@ -42,4 +42,8 @@ public class Controlador_Lista {
     public void mostraLista(){
         view.mostraLista(model.getCabeza());
     }
+    
+    public void BuscarElemento(){
+        model.buscar(0);
+    }
 }
