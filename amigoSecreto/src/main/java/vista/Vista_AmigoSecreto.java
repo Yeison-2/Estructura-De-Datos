@@ -27,7 +27,7 @@ public class Vista_AmigoSecreto {
     }
     
     public void mostrarAsignacion(String nombre, int numeroAsignado){
-        System.out.println(nombre+" Su numero asignado es: "+numeroAsignado);
+        System.out.println(nombre+" Su numero asignado es: "+(numeroAsignado+1));
         
     }
     

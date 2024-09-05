@@ -28,8 +28,8 @@ public class Lista_Numeros {
     
     public void agregarNumero(int valor){
         Numero nuevo = new Numero(valor);
-        if(cabeza != null){
-            cabeza = null;
+        if(cabeza == null){
+            cabeza = nuevo;
         }else{
             Numero actual= cabeza;
             
@@ -40,17 +40,21 @@ public class Lista_Numeros {
         }
     }
     
+
+    
+    
+    
     public int sacarAleatorio(){
         if (cabeza == null) {
             throw new IllegalStateException("No hay numero disponible");
             
         }
         Random random = new Random();
-        int indiceAleatorio = random.nextInt(contarNumeros);
+        int indiceAleatorio = random.nextInt(contarNumeros());
         Numero actual = cabeza;
         Numero anterior = null;
         
-        for(int i= 0;i < indiceAleatorio;i++){
+        for (int i = 0; i < indiceAleatorio;i++){
             anterior = actual;
             actual = actual.getSiguiente();
             

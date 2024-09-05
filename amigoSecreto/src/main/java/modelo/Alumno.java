@@ -39,7 +39,7 @@ public class Alumno {
         this.nombre = nombre;
     }
     
-    public int getNumeroAsignadi(){
+    public int getNumeroAsignado(){
         return numeroAsignado;
     }
     
