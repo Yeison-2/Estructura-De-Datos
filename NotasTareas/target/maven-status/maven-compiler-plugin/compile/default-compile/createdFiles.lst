@@ -1,0 +1,8 @@
+modelo\TareaPersonal.class
+controlador\Controlador_ListaTareas.class
+com\mycompany\notastareas\NotasTareas.class
+vista\Vista_NewTarea.class
+modelo\Tarea.class
+modelo\Tarea_Trabajo.class
+modelo\Lista_Enlasada.class
+modelo\Prioridad.class
