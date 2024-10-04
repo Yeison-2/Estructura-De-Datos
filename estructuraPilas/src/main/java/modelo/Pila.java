@@ -41,8 +41,14 @@ public class Pila {
         if(pilaVacia()){
             cima = nuevoNodo;
         } else {
-            nuevoNodo.siguiente = cima;
-            cima = nuevoNodo;
+            if(cima.dato+1 == dato){
+                nuevoNodo.siguiente = cima;
+                cima = nuevoNodo;
+                System.out.println("----------- "+dato+" apilado con exito");
+            }else{
+                System.out.println(" El dato no cumaple la condicion");
+            }
+            
         }
         size++;
     }

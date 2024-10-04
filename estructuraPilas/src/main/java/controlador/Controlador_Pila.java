@@ -39,7 +39,7 @@ public class Controlador_Pila {
                  case 1:
                      int numero = view.pedirDatoInt();
                      model.apilar(numero);
-                     view.mostarMensajes("numero apilado");
+                     
                      break;
                  case 2:
                      int quitar = model.desaPilar();
