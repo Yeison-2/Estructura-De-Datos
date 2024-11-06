@@ -35,7 +35,7 @@ public class Controlador_PilaCaracteres {
         boolean respuesta = model.esBalanceado(exprecion);
 
         view.resultados(model.esBalanceado(exprecion));
-
+        
     }
 
 }
